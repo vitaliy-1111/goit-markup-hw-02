@@ -1,0 +1,49 @@
+/*Fonts
+ font-family: 'Raleway', sans-serif;
+ font-family: 'Roboto', sans-serif;
+*/
+/* Colors
+ background-color:  #ffffff;
+ content text color: #757575;
+ title text-color: #212121;
+ accent-text-color: #2196F3;
+ white-text-color: #ffffff;
+*/
+:root {
+  --main-text-color: #757575;
+  --background-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+}
+.logo {
+  color: #000000;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+.logo .accent {
+  color: var(--accent-text-color);
+}
+.nav-link {
+  list-style: none;
+
+  color: var(--title-text-color);
+}
+.link,
+.mail,
+.tel {
+  text-decoration: none;
+}
