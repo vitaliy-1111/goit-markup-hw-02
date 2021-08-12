@@ -4,6 +4,7 @@
 */
 /* Colors
  background-color:  #ffffff;
+ second background color: #F5F4FA;
  content text color: #757575;
  title text-color: #212121;
  accent-text-color: #2196F3;
@@ -13,6 +14,7 @@
   --main-text-color: #757575;
   --secondary-text-color: #ffffff;
   --background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
 }
@@ -77,7 +79,7 @@ body {
 .site-header .tel:focus {
   color: var(--accent-text-color);
 }
-/* Main content */
+/* Main content index.html*/
 /* hero-section */
 .main-title {
   color: grey; /*var(----secondary-text-color); */
@@ -123,11 +125,14 @@ body {
 }
 /* Lists from 3 sections */
 .benefits-list,
-.projects-list,
+.works-list,
 .team-list {
   list-style: none;
 }
 /* Our team section */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
 .team-title {
   color: var(--title-text-color);
 
@@ -140,13 +145,46 @@ body {
   font-size: 16px;
   line-height: 1.1;
 }
+/* Main content portfolio.html */
+.filters-list,
+.projects-list {
+  list-style: none;
+}
+.button-filters {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  cursor: pointer;
+}
+.button-filters:hover,
+.button-filters:focus {
+  color: var(--background-color);
+  background-color: var(--accent-text-color);
+}
+.project-title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.category {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
 /* Footer */
 .site-address {
   font-style: normal;
 }
 .site-address .mail,
 .site-address .tel {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6); /*rgba(255, 255, 255 ,0.6)*/
 
   text-decoration: none;
 }
