@@ -58,19 +58,23 @@ body {
 .nav-list .link:focus {
   color: var(--accent-text-color);
 }
+.nav-list .link.current {
+  color: var(--accent-text-color);
+}
 /* mail and telephone in header */
-.site-head .mail,
-.site-head .tel {
+.site-header .mail,
+.site-header .tel {
   color: var(--main-text-color);
   font-weight: 500;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   text-decoration: none;
 }
-.site-head .mail:hover,
-.site-head .mail:focus,
-.site-head .tel:hover,
-.site-head .tel:focus {
+.site-header .mail:hover,
+.site-header .mail:focus,
+.site-header .tel:hover,
+.site-header .tel:focus {
   color: var(--accent-text-color);
 }
 /* Main content */
@@ -95,6 +99,10 @@ body {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 /* Title for 3 sections */
 .secondary-title {
